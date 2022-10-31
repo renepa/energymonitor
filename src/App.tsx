@@ -5,6 +5,7 @@ import {AuthorProps, Comment} from "./components/examples/Comment";
 import {Clock} from "./components/examples/Clock";
 import {LoginControl} from "./components/examples/LoginControl";
 import {Welcome} from "./components/examples/Welcome";
+import {RechartLineChart} from "./components/charts/RechartLineChart";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Welcome name={'René'}/>
             <Clock/>
             <LoginControl/>
+            <RechartLineChart/>
         </div>
     )
 }
