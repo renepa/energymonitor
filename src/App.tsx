@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
+import ReactDOM from 'react-dom/client';
 import './App.css';
+import {AuthorProps, Comment} from "./components/examples/Comment";
+import {Clock} from "./components/examples/Clock";
+import {LoginControl} from "./components/examples/LoginControl";
+import {Welcome} from "./components/examples/Welcome";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className='App App-header'>
+            <Welcome name={'René'}/>
+            <Clock/>
+            <LoginControl/>
+        </div>
+    )
 }
-
+// const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+// root.render(<LoginControl />);
 export default App;
